@@ -87,6 +87,6 @@ xdmvc.on("objectChanged", function(msg){
     albums[msg.data.id].url = msg.data.cover;
 });
 
-server.listen(8082);
-
-
+var port = 8082;
+server.listen(port);
+console.log("Run gallery-polymer on port " + port + ". path /gallery.html");

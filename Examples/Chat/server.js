@@ -28,6 +28,7 @@ var app = connect().use(serveStatic(__dirname + '/public'));
 var server = http.createServer(app);
 
 xdmvc.start();
-server.listen(8080);
 
-
+var port = 8080;
+server.listen(port);
+console.log("Run chat on port " + port);

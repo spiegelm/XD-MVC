@@ -8,6 +8,6 @@ var app = connect().use(serveStatic(__dirname + '/public'));
 var server = http.createServer(app);
 
 xdmvc.start(9010, 3010, 9011);
-server.listen(8080);
-
-
+var port = 8000;
+server.listen(port);
+console.log("Run maps on port " + port + ". path /maps.html");
